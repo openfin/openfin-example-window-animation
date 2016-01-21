@@ -1,5 +1,5 @@
 # OpenFin app seed
-This is a vanilla JavaScript app seed for developing OenFin apps. It is Free from frameworks and build systems, though you may add them as you see fit.
+This is a vanilla JavaScript app seed for developing OpenFin apps. It is free from frameworks and build systems, though you may add them as you see fit.
 
 It has a simple Node/Express server for local development.
 
@@ -10,7 +10,7 @@ $ npm install
 ```
 NB: on a Mac you may need to type 'sudo npm install'
 
-Navigate to the root folder wher 'server.js' resides in your command line tool and run:
+Navigate to the root folder where 'server.js' resides with your command line tool and run:
 
 ```
 $ node server
