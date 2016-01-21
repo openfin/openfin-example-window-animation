@@ -18,6 +18,6 @@ $ node server
 
 This should start a simple Node server at [http://localhost:9070](http://localhost:9070), then, click the link below to install as an openFin app.
 
-If you wish to change to localhost port you will need to change the referances in "server.js", "app.json" and in the installer link below.
+If you wish to change to localhost port you will need to change the references in "server.js", "app.json" and in the installer link below.
 
 [installer](https://dl.openfin.co/services/download?fileName=openfin_appseed&config=http://localhost:9070/app.json)
