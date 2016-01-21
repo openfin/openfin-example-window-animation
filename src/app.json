@@ -1,0 +1,19 @@
+{
+  "devtools_port": 9090,
+  "startup_app": {
+    "name": "OpenFin appseed",
+    "description": "A vanilla appseed for OpenFin applications",
+    "url": "http://localhost:9070",
+    "uuid": "openfin-closing-events-demo",
+    "autoShow": true
+  },
+  "runtime": {
+    "arguments": "",
+    "version": "beta"
+  },
+  "shortcut": {
+    "company": "OpenFin",
+    "description": "OpenFin appseed",
+    "name": "OpenFin appseed"
+  }
+}
