@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function(){
+    init();
+});
+
 function init(){
     console.log("Dom Loaded ", this);
     try{
