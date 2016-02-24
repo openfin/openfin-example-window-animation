@@ -74,13 +74,13 @@ Start the express server. Still in the terminal type:
 ```
 $ node server
 ```
-You should see a message in the terminal 'Express server listening on port'.
+You should see a message in the terminal 'Express server listening on port 9070'.
 
 Keep the terminal window open (closing it will close the server). Open your web browser at [http://localhost:9070](http://localhost:9070) . 
 
 You should see your "Hello World" index html page. 
 
-You now have an ultra-minimal web app ready to pacgaed up as an OpenFin app.
+You now have an ultra-minimal web app ready to packaged up as an OpenFin app.
 
 
 ## 2. OpenFin your app
@@ -88,7 +88,7 @@ You now have an ultra-minimal web app ready to pacgaed up as an OpenFin app.
 ### 2.1 Create an OpenFin config file
 This is the file which will specify how your OpenFin app appers and behaves. 
 
-Create a file, in the src directory, called 'app_local.json'. You may name the file whatever you like as long as it is correctly targeted when generating the installer (of which, more later).
+Create a file, in the src directory, called 'app_local.json'. You may name the file whatever you like as long as it is correctly targeted when generating the installer (of which, more later). You may create a number of app.json files, eg: for local, alpha, beta and staging versions of your app.
 
 Add the following code to the app_local.json:
 
@@ -127,22 +127,55 @@ A full list and explanation of configurable properties may be found at [https://
 The installer is generated via a url, like this:
 
 ```
-https://dl.openfin.co/services/download?fileName=openfin_appseed&config=http://localhost:9070/app.json 
+https://dl.openfin.co/services/download?fileName=openfin_appseed&config=http://localhost:9070/app_local.json 
 ```
 The parts of the url are as follows:
 
-**https://dl.openfin.co/services/download :** The path to OpenFin's app generator.
+**https://dl.openfin.co/services/download :** The path to OpenFin's app generator - this must not be altered.
 
 **?fileName=nameOfTheGeneratedInstallerApp :** The name you wish the installer to have once downloaded.
 
-**&config=http://localhost:9070/app.json :** The path to the config file created in step 2.1.
+**&config=http://localhost:9070/app_local.json :** The url to the config file created in step 2.1.
 
 Navigate to the URL in a web browser, it will download an .exe file. Run the file and you should see your OpenFin 'Hello World' app.
 
 ##3. Adding JavaScript
 
+Your app, as built in the preceeding steps, will run exactly the same in Chrome and OpenFin. When developing real world apps reusability is often a prime concern. You may wish your app to function as an OpenFin app but also perform, unmodified, on the web and mobile too.
 
- 
+OpenFin's additional functionality will, most likely, account for a small percentage of your code so it is wise to write a conditional statement to discover if you are running within OpenFin's runtime and the OpenFin API is available or degrade gracefully on Web and mobile. For example:
+
+```
+document.addEventListener("DOMContentLoaded", function(){
+    init();
+});
+
+function init(){
+/* Code common to both OpenFin and browser to go above.
+   Then the specific code for OpenFin and browser only to be
+   targeted in the try/catch block below. 
+*/
+    try{
+        fin.desktop.main(function(){
+            initWithOpenFin();
+        })
+    }catch(err){
+        initNoOpenFin();
+    }
+};
+
+function initWithOpenFin(){
+    alert("OpenFin is available");
+    // Your OpenFin specific code to go here...
+}
+
+function initNoOpenFin(){
+    alert("OpenFin is not available - you are probably running in a browser.");
+    // Your browser-only specific code to go here...
+}
+
+```
+ Add the link to the javaScript into your 'index.html'.
 
 --
 ## OpenSource resources
@@ -154,11 +187,6 @@ Code Editors: [Atom](https://atom.io/), [Visual Studio Code](https://code.visual
 Browser: [Google Chrome](https://www.google.com/chrome/)
 
 Terminal Apps: The [Git Bash](https://git-for-windows.github.io) terminal tool comes with the whole Git package and is a failrly foolproof way of running npm commands.
-
-
-
-
-
 
 
 --
