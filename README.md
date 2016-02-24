@@ -189,8 +189,9 @@ Browser: [Google Chrome](https://www.google.com/chrome/)
 Terminal Apps: The [Git Bash](https://git-for-windows.github.io) terminal tool comes with the whole Git package and is a failrly foolproof way of running npm commands.
 
 
---
-If you would rather cut to the chase and don't want to follow the steps above manually, clone this repository. 
+
+## Building from this repository
+If you would rather cut-to-the-chase and don't want to follow the steps above manually, clone this repository. 
 
 This is a vanilla JavaScript app seed for developing OpenFin apps. It is free from frameworks and build systems, though you may add them as you see fit.
  
