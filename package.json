@@ -13,7 +13,7 @@
   "author": "Graham Clapham",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.4"
   },
   "devDependencies": {
     "jasmine": "2.4.1",
