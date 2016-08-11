@@ -1,14 +1,16 @@
 # OpenFin How To: Hello World
 
-### Prerequisites
-####You will need:
+## Prerequisites
 
-- A computer running Windows 8 or higher, or a Mac running Parallels, VirtualBox or similar, to allow Windows 8 or higher to be run.
-- A web browser, preferably Google Chrome.
-- A code editor of your choice.
+You will need:
+
+- A computer running Windows 8 or higher, or a Mac running Parallels, [VirtualBox](https://www.virtualbox.org/) or similar, to allow Windows 8 or higher to be run
+- A web browser, preferably [Google Chrome](https://www.google.com/chrome/)
+- A code editor of your choice: Atom](https://atom.io/), [Visual Studio Code](https://code.visualstudio.com/), [Notepad++](https://notepad-plus-plus.org/)
 - An internet connection.
+- Terminal Apps: The [Git Bash](https://git-for-windows.github.io) terminal tool comes with the whole Git package and is a failrly foolproof way of running npm commands.
 
-## 1. Create your web app
+## 1. Create Your Web App
 
 ### 1.1 Create a main HTML file
 First create a directory in the root of your project called **src**. You may structure your project any way you see fit; this structure is not de rigueur for OpenFin. In **src**, we will create an HTML file to be the main app file, and we will follow convention and call it **index.html**. Add the following code to **src/index.html** to create a minimal HTML page:
@@ -80,7 +82,7 @@ You should see your **Hello World** index html page.
 You now have an ultra-minimal web app ready to packaged up as an OpenFin app.
 
 
-## 2. OpenFin your app
+## 2. OpenFin Your App
 
 ### 2.1 Create an OpenFin config file
 This is the file which will specify how your OpenFin app appears and behaves. 
@@ -134,7 +136,7 @@ The parts of the url are as follows:
 
 Navigate to the URL in a web browser. It will download an .exe file. Run the file. You should see your OpenFin **Hello World** app.
 
-##3. Adding JavaScript
+## 3. Adding JavaScript
 
 Your app, as built in the preceeding steps, will run exactly the same in Chrome and OpenFin. When developing real world apps, reusability is often a primary concern. You may wish for your app to function as an OpenFin app, but also perform, unmodified, on the web and mobile too.
 
@@ -173,12 +175,6 @@ function initNoOpenFin(){
  Add the link to the javaScript into your **index.html**.
 
 --
-## Open-Source resources
-
-- Mac virtual machine (to run Windows on Mac): [VirtualBox](https://www.virtualbox.org/)
-- Code Editors: [Atom](https://atom.io/), [Visual Studio Code](https://code.visualstudio.com/), [Notepad++](https://notepad-plus-plus.org/)
-- Browser: [Google Chrome](https://www.google.com/chrome/)
-- Terminal Apps: The [Git Bash](https://git-for-windows.github.io) terminal tool comes with the whole Git package and is a failrly foolproof way of running npm commands.
 
 ## Building from this repository
 If you would rather cut-to-the-chase and not follow the steps above manually, clone this repository. 
