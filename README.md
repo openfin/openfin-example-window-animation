@@ -1,4 +1,4 @@
-# OpenFin How To: Hello World
+# OpenFin How To: Animate a window
 
 ## Prerequisites
 
@@ -196,6 +196,6 @@ Navigate to the root folder where **server.js** resides with your command line t
 $ node server
 ```
 
-This should start a simple Node server at [http://localhost:9070](http://localhost:9070), then, click the link below to install as an OpenFin app.
+This should start a simple Node server at [http://localhost:9071](http://localhost:9071), then, click the link below to install as an OpenFin app.
 
-If you wish to change to localhost port, you will need to change the references in **server.js**, **app.json**, and in the [installer](https://dl.openfin.co/services/download?fileName=openfin_appseed&config=http://localhost:9070/app.json).
+If you wish to change to localhost port, you will need to change the references in **server.js**, **app.json**, and in the [installer](https://dl.openfin.co/services/download?fileName=openfin_window_animation&config=http://localhost:9071/app_local.json).

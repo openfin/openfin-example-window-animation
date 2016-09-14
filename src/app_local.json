@@ -1,10 +1,10 @@
 {
   "devtools_port": 9090,
   "startup_app": {
-    "name": "OpenFin appseed",
-    "description": "A vanilla appseed for OpenFin applications",
-    "url": "http://localhost:9070",
-    "uuid": "openfin-closing-events-demo",
+    "name": "OpenFin window animation",
+    "description": "OpenFin's window animation api",
+    "url": "http://localhost:9071",
+    "uuid": "openfin-window-animation",
     "autoShow": true
   },
   "runtime": {
@@ -13,7 +13,7 @@
   },
   "shortcut": {
     "company": "OpenFin",
-    "description": "OpenFin appseed",
-    "name": "OpenFin appseed"
+    "description": "OpenFin window animation",
+    "name": "OpenFin window animation"
   }
 }

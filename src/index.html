@@ -2,14 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title></title>
 </head>
 <body>
-<h2>Hello from OpenFin</h2>
-<p>This is a starting point for your OpenFin apps</p>
-<p>No frameworks, libraries or build systems.</p>
-<p>It has unit testing set up (using Karma/Jasmine).</p>
-<p>It also has a ultra simple Node/Express server. Launch it in the Command line with 'node server' from the root directory.</p>
+
+<div class="container">
+
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-default" id="resize">Resize</button>
+        </div>
+
+        <div class="col-md-4">
+            <label for="opacity">OPACITY</label><input class="form-control" type="number" name="opacity" id="opacity" min=".25" max="1" value = ".5" step=".02">
+        </div>
+
+        <div class="col-md-4">
+            <label for="left">LEFT: </label><input class="form-control" type="number" name="left" id="left" min="0" max="2000" value = "50" step="10">
+        </div>
+
+        <div class="col-md-4">
+            <label for="top">TOP: </label><input class="form-control" type="number" name="top" id="top" min="100" max="2000" value = "50" step="10">
+        </div>
+
+        <div class="col-md-4">
+            <label for="top">WIDTH: </label><input class="form-control" type="number" name="width" id="width" min="100" max="2000" value = "900" step="10">
+        </div>
+
+        <div class="col-md-4">
+            <label for="top">HEIGHT: </label><input class="form-control" type="number" name="height" id="height" min="100" max="2000" value = "900" step="10">
+        </div>
+
+        <div class="col-md-4">
+            <label for="top">DURATION: </label><input class="form-control" type="number" name="duration" id="duration" min="100" max="2000" value = "1000" step="10">
+        </div>
+
+    </div>
+
+</div>
+
+
+
 </body>
 </html>
 <script src="js/index.js"></script>
