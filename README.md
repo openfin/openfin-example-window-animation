@@ -154,4 +154,4 @@ This should start a simple Node server at [http://localhost:9071](http://localho
 
 If you wish to change to localhost port you will need to change the referances in "server.js", "app.json" and in the installer link below.
 
-[installer](https://dl.openfin.co/services/download?fileName=openfin_windowdragging&config=http://localhost:9071/app_local.json)
+[installer](https://dl.openfin.co/services/download?fileName=openfin_window_animation&config=http://localhost:9071/app_local.json)
