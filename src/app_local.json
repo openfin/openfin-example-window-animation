@@ -5,12 +5,14 @@
     "description": "OpenFin's window animation api",
     "url": "http://localhost:9071",
     "uuid": "openfin-window-animation",
-    "autoShow": true
+    "autoShow": true,
+    "saveWindowState": false
   },
   "runtime": {
     "arguments": "",
     "version": "stable"
   },
+
   "shortcut": {
     "company": "OpenFin",
     "description": "OpenFin window animation",
