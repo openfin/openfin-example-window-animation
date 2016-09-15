@@ -12,8 +12,16 @@
 
 
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
             <button class="btn btn-default" id="resize">Resize</button>
+        </div>
+        <div class="col-md-6">
+
+            <div class="checkbox">
+                <label>
+                    <input id = "interrupt" type="checkbox" checked> Interrupt
+                </label>
+            </div>
         </div>
 
         <div class="col-md-4">
@@ -37,11 +45,14 @@
         </div>
 
         <div class="col-md-4">
-            <label for="top">DURATION: </label><input class="form-control" type="number" name="duration" id="duration" min="100" max="2000" value = "1000" step="10">
+            <label for="top">DURATION: </label><input class="form-control" type="number" name="duration" id="duration" min="100" max="4000" value = "1000" step="10">
         </div>
 
-    </div>
 
+        <div class="col-md-4">
+            <p id="state">Animation not called</p>
+        </div>
+    </div>
 </div>
 
 
