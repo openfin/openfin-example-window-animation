@@ -51,8 +51,8 @@ function runAnimation(randomise){
     if (randomise){
         _durationInput.value = parseInt( parseFloat(_durationInput.min) + ((Math.random() * parseFloat(_durationInput.max))));
         //_opacityInput.value = parseInt( parseFloat(_opacityInput.min) + (Math.random() * parseFloat(_opacityInput.max)));
-        _leftInput.value = parseInt( parseFloat(_leftInput.min) + ((Math.random() * parseFloat(_leftInput.max))));
-        _heightInput.value = parseInt( parseFloat(_heightInput.min) + ((Math.random() * parseFloat(_heightInput.max))));
+        _leftInput.value = parseInt( parseFloat(Math.random() * parseFloat(_leftInput.max)));
+        _heightInput.value = parseInt( parseFloat((Math.random() * parseFloat(_heightInput.max))) );
     }
 
     _duration  =   parseFloat(_durationInput.value);
