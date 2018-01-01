@@ -11,7 +11,7 @@ You may:
 - Combine animations
 - Get notified when an animation is completed
 
-###Position
+### Position
 To animate a window from the top-left corner of the screen to (400, 400) over 2000 milliseconds,
 
 ```
@@ -26,7 +26,7 @@ wnd.animate({
 ```
 
 
-###Size
+### Size
 To change the size of a window from 300px x 300px to 600px x 600px over 2000 milliseconds.
 
 ```
@@ -41,7 +41,7 @@ wnd.animate({
 });
 ```
 
-###Opacity
+### Opacity
 To change the opacity of a window from 1 (opaque) to 0 (transparent).
 
 ```
@@ -56,7 +56,7 @@ wnd.animate({
     }
 });
 ```
-###Interrupt animations
+### Interrupt animations
 If you want to perform multiple animations, you may need to interrupt the previous animation so that the next one can begin. To do so you must set the interrupt option for the last animation to true.
 
 ```
@@ -83,7 +83,7 @@ wnd.animate({
 
 Otherwise, if interrupt is set to false, the animation will be queued and completed only after the current animation and all other previous queued animations have completed.
 
-###Combine animations
+### Combine animations
 The runtime also allows you to perform multiple animations at the same time. For example, to animate all three animations.
 
 ```
@@ -106,7 +106,7 @@ wnd.animate({
 
 ```
 
-###Get notified when an animation is completed
+### Get notified when an animation is completed
 The animate method allows you to specify a callback as the third argument. This callback is invoked after the longest animation has completed or if the animate method was interrupted.
 
 ```
@@ -131,7 +131,7 @@ wnd.animate({
 
 ```
 
-###Install and run
+### Install and run
 
 This is a vanilla JavaScript app free from frameworks and build systems, though you may add them as you see fit.
 
@@ -142,16 +142,11 @@ Clone the repo and run
 ```
 $ npm install
 ```
-NB: on a Mac you may need to type 'sudo npm install'
 
 Navigate to the root folder where 'server.js' resides in your command line tool and run:
 
 ```
-$ node server
+$ npm start
 ```
 
-This should start a simple Node server at [http://localhost:9071](http://localhost:9071), then, click the link below to install as an openFin app.
-
-If you wish to change to localhost port you will need to change the referances in "server.js", "app.json" and in the installer link below.
-
-[installer](https://dl.openfin.co/services/download?fileName=openfin_window_animation&config=http://localhost:9071/app_local.json)
+This should start a simple Node server at [http://localhost:9071](http://localhost:9071), then launch the app using the [node openfin launcher](https://www.npmjs.com/package/openfin-launcher).
